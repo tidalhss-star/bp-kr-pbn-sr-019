@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="bpaas-design-system" content="editorial-apple">
+    <meta name="bpaas-design-theme" content="kr-ivory-ink">
+    <meta name="description" content="청담 셔츠룸의 진짜. 당신이 아는 그런 곳이 아니다. 010-6279-0862. 19금 성인 전용. 청담동 프리미엄 셔츠룸 정보와 리뷰. 가라앉지 않는 취향을 위한 공간.">
+    <meta name="keywords" content="청담 셔츠룸, 청담동 셔츠룸, 셔츠룸 정보, 청담 셔츠룸 추천, 강남 셔츠룸, 프리미엄 셔츠룸">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://kr-pbn-sr-019.vercel.app/">
+    <meta property="og:title" content="청담 셔츠룸 블로그 | 당신이 몰랐던 진짜">
+    <meta property="og:description" content="청담 셔츠룸의 기준을 다시 쓰다. 010-6279-0862. 19금 성인 전용.">
+    <meta property="og:type" content="website">
+    <title>청담 셔츠룸 블로그 | 진짜 정보 한방에 정리</title>
+    <style>
+        /* === CSS Reset & Base === */
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background: #faf9f7;
+            color: #1e1e1e;
+            line-height: 1.6;
+        }
+        /* === Typography === */
+        h1, h2, h3, h4, h5, h6 {
+            font-weight: 700;
+            letter-spacing: -0.02em;
+        }
+        h1 {
+            font-size: 2.5rem;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+        }
+        h2 {
+            font-size: 1.8rem;
+            margin-bottom: 0.75rem;
+        }
+        h3 {
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+        }
+        p {
+            margin-bottom: 1.2rem;
+            color: #2c2c2c;
+        }
+        a {
+            color: #1e1e1e;
+            text-decoration: none;
+            border-bottom: 1px solid #a0a0a0;
+            transition: border-color 0.2s;
+        }
+        a:hover {
+            border-bottom: 2px solid #1e1e1e;
+        }
+        /* === Layout === */
+        .container {
+            max-width: 1120px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        /* === Header & Navigation === */
+        header {
+            background: #ffffff;
+            border-bottom: 1px solid #e0ddd8;
+            padding: 0.8rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+        .nav-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo a {
+            font-size: 1.6rem;
+            font-weight: 800;
+            letter-spacing: -0.03em;
+            border-bottom: none;
+            color: #1a1a1a;
+        }
+        .logo a:hover {
+            border-bottom: none;
+            opacity: 0.7;
+        }
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+        .nav-links a {
+            font-weight: 500;
+            border-bottom: none;
+            font-size: 0.95rem;
+            color: #2b2b2b;
+        }
+        .nav-links a:hover {
+            border-bottom: 2px solid #1e1e1e;
+        }
+        .nav-links .tel-link {
+            background: #1e1e1e;
+            color: #ffffff;
+            padding: 0.4rem 1.2rem;
+            border-radius: 40px;
+            font-weight: 600;
+            border-bottom: none;
+            letter-spacing: 0.02em;
+        }
+        .nav-links .tel-link:hover {
+            background: #3a3a3a;
+            border-bottom: none;
+        }
+        /* hamburger menu (mobile) */
+        .hamburger-menu {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
+            background: none;
+            border: none;
+            padding: 0.2rem;
+        }
+        .hamburger-menu span {
+            width: 28px;
+            height: 3px;
+            background: #1e1e1e;
+            border-radius: 2px;
+        }
+        /* responsive 768 */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                background: white;
+                position: absolute;
+                top: 60px;
+                right: 20px;
+                width: 220px;
+                border: 1px solid #e0ddd8;
+                padding: 1.2rem;
+                gap: 1.2rem;
+                border-radius: 16px;
+                box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+            }
+            .nav-links.open {
+                display: flex;
+            }
+            .hamburger-menu {
+                display: flex;
+            }
+            .nav-links .tel-link {
+                text-align: center;
+                width: 100%;
+            }
+        }
+        /* === Hero / Section === */
+        .section-title {
+            font-size: 2.2rem;
+            margin: 2.5rem 0 1rem;
+            border-left: 6px solid #1e1e1e;
+            padding-left: 1rem;
+        }
+        .blog-card {
+            background: #ffffff;
+            border: 1px solid #eae8e3;
+            border-radius: 24px;
+            padding: 2.2rem;
+            margin: 2rem 0;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.02);
+        }
+        .blog-card h2 {
+            font-size: 2rem;
+            margin-bottom: 0.25rem;
+        }
+        .blog-meta {
+            font-size: 0.85rem;
+            color: #6b6b6b;
+            margin-bottom: 1.5rem;
+            letter-spacing: 0.02em;
+        }
+        .blog-card blockquote {
+            border-left: 4px solid #1e1e1e;
+            padding-left: 1.2rem;
+            margin: 1.8rem 0;
+            font-style: italic;
+            color: #2c2c2c;
+            font-weight: 300;
+        }
+        .blog-card .highlight {
+            background: #f1efe9;
+            padding: 0.1rem 0.4rem;
+            border-radius: 4px;
+            font-weight: 600;
+        }
+        .cta-tel {
+            display: inline-block;
+            background: #1e1e1e;
+            color: white;
+            padding: 0.8rem 2rem;
+            border-radius: 40px;
+            font-weight: 700;
+            margin: 0.8rem 0 1.2rem;
+            border-bottom: none;
+            transition: background 0.2s;
+        }
+        .cta-tel:hover {
+            background: #3a3a3a;
+            border-bottom: none;
+        }
+        hr {
+            border: none;
+            border-top: 1px solid #ddd9d2;
+            margin: 2rem 0;
+        }
+        footer {
+            border-top: 1px solid #e0ddd8;
+            padding: 2rem 0;
+            margin-top: 3rem;
+            text-align: center;
+            color: #5c5c5c;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container nav-wrapper">
+        <div class="logo"><a href="/">청담 셔츠룸</a></div>
+        <button class="hamburger-menu" aria-label="메뉴 열기" onclick="this.nextElementSibling.classList.toggle('open')">
+            <span></span><span></span><span></span>
+        </button>
+        <nav class="nav-links">
+            <a href="/">홈</a>
+            <a href="/about">정보</a>
+            <a href="/blog">블로그</a>
+            <a href="/review">리뷰</a>
+            <a href="tel:01062790862" class="tel-link">010-6279-0862</a>
+        </nav>
+    </div>
+</header>
+
+<main class="container">
+    <h1 class="section-title">블로그 · 청담 셔츠룸의 진짜</h1>
+    <p style="font-size:1.1rem; color:#3a3a3a;">가라앉지 않는 취향, 직접 경험한 사람들의 이야기.</p>
+
+    <!-- 블로그 포스트 1 (정보성 글) -->
+    <article class="blog-card">
+        <h2>청담 셔츠룸, 아직도 '그런 곳'으로 알았다면?</h2>
+        <div class="blog-meta">2025-03-21  ·  에디터  ·  19금 성인 콘텐츠</div>
+        <p>
+            <span class="highlight">“셔츠룸? 거기 다 똑같지.”</span> — 이 말, 이제는 버려라.  
+            청담 셔츠룸은 그런 프레임으로 접근하면 100% 후회한다.  
+            여긴 입구부터 분위기가 다르다. 조명 하나, 인테리어 디테일, 심지어 잔향까지.  
+            <strong>프리미엄이라는 말이 아깝지 않은 공간</strong>, 당신이 상상한 ‘셔츠룸’의 클리셰를 전부 깨부순다.
+        </p>
+        <blockquote>
+            “청담동에서 가장 완벽한 조합: 스카치 한잔 + 맞춤 케어 + 아무도 모르는 비밀스러움.  
+            여기선 당신이 게스트가 아니라 주인공이다.”
+        </blockquote>
+        <p>
+            몇 가지 사실을 정리해줄게. 첫째, <strong>아가씨 개념이 아니다.</strong>  
+            모든 파트너는 전문 에스코트 & 케어 매니저로, 분위기와 서비스 마인드가 수준급이다.  
+            둘째, <strong>가성비 타령 하지 마라.</strong> 여긴 싼 맛에 오는 곳이 아니다.  
+            대신 그 가격이 증명하는 건 <u>완벽한 프라이버시</u>와 <u>취향 저격 케어</u>다.  
+            전화 한 통이면 모든 게 세팅된다. <br> 
+            <a href="tel:01062790862" class="cta-tel">010-6279-0862</a>  
+            <span style="display:block; margin-top:-0.5rem; font-size:0.9rem;">※ 성인만, 예약제로 운영됩니다.</span>
+        </p>
+        <p>
+            청담 셔츠룸의 진짜 가치는 <strong>'니즈를 읽는 능력'</strong>에 있다.  
+            처음 온 사람도, 단골처럼 스무스하게 받아들여진다.  
+            "어떤 분위기 원하세요?" 한마디에 모든 게 결정된다.  
+            이게 바로 <em>진짜 프리미엄</em>이고, 다른 곳과 차원이 다른 이유다.
+        </p>
+        <hr>
+        <h3>그래서, 결론만 말한다.</h3>
+        <p>
+            청담 셔츠룸은 <strong>'셔츠룸'이라는 이름을 걸고 있지만, 사실상 럭셔리 프라이빗 라운지</strong>에 가깝다.  
+            당신이 아는 그런 곳이 아니다. 진짜를 원한다면, 직접 확인하거나 전화해봐.  
+            착각은 금물. 여긴 청담의 새로운 기준이다.
+        </p>
+        <p style="margin-top:1.8rem; border-top:1px dashed #ccc; padding-top:1rem;">
+            <strong>19금 성인 전용</strong> ｜  <a href="tel:01062790862">010-6279-0862</a> ｜  예약제 · 24시 상담
+        </p>
+    </article>
+
+    <!-- 추가 정보/FAQ 느낌의 블록 (같은 디자인 유지) -->
+    <div style="background:#ffffff; border:1px solid #eae8e3; border-radius:24px; padding:2rem; margin:2rem 0;">
+        <h3 style="font-size:1.6rem;">🤍 당신이 궁금해하는 그 질문</h3>
+        <p><strong>Q. 첫 방문인데 눈치 보이나요?</strong><br>
+        A. 전혀. 오히려 너무 자연스럽게 리드해줘서 '여기 단골이었나?' 싶을 정도. 
+        <br>전화할 때 “첫 방문입니다”만 말하면 끝. 
+        <a href="tel:01062790862" style="border-bottom:1px solid #888;">010-6279-0862</a>로 바로 연결된다.</p>
+        <p><strong>Q. 가격이 궁금해요.</strong><br>
+        A. 가격대는 기본 30만 원부터. 하지만 서비스와 분위기를 겪으면 납득된다. 
+        <br>더 자세한 건 전화로 묻는 게 정확. (19금 성인만)</p>
+        <p style="margin-bottom:0;"><strong>Q. 위치는? 청담동 어디?</strong><br>
+        A. 청담동 메인 스트리트에서 살짝 들어온 골목. 
+        <br>번화가에서 3분 거리인데 완전히 프라이빗. 예약 시 상세 주소 안내.</p>
+    </div>
+
+    <!-- 또 다른 정보 카드 (디자인 통일) -->
+    <div class="blog-card" style="margin-top:1rem;">
+        <h3 style="font-size:1.8rem;">청담 셔츠룸, 이 정도는 알고 가자</h3>
+        <ul style="list-style: none; padding-left:0; margin:1.2rem 0;">
+            <li style="padding:0.5rem 0; border-bottom:1px solid #f0ede7;">✓ <strong>드레스 코드</strong> · 셔츠 or 재킷 기본 (스마트 캐주얼)</li>
+            <li style="padding:0.5rem 0; border-bottom:1px solid #f0ede7;">✓ <strong>서비스 타임</strong> · 최소 1시간, 2시간 추천 (취향에 따라 연장)</li>
+            <li style="padding:0.5rem 0; border-bottom:1px solid #f0ede7;">✓ <strong>음료</strong> · 위스키, 샴페인, 논알콜 모두 가능</li>
+            <li style="padding:0.5rem 0;">✓ <strong>핵심 한 줄</strong> · “니가 아는 셔츠룸 아님. 청담의 숨은 주소.”</li>
+        </ul>
+        <p style="margin-bottom:0;">
+            <span style="background:#1e1e1e; color:white; padding:0.2rem 1rem; border-radius:40px; font-weight:600;">#청담_셔츠룸_정보</span>
+        </p>
+    </div>
+
+    <!-- 전화 CTA 한 번 더 -->
+    <div style="text-align:center; margin:3rem 0 1rem;">
+        <a href="tel:01062790862" style="display:inline-block; background:#1e1e1e; color:white; padding:1rem 3rem; border-radius:60px; font-weight:700; font-size:1.3rem; border:none; letter-spacing:0.02em;">010-6279-0862</a>
+        <p style="margin-top:0.7rem; font-size:0.9rem;">진짜가 궁금하면 전화해. 후회 없음.</p>
+    </div>
+
+</main>
+
+<footer>
+    <div class="container">
+        <p>청담 셔츠룸  ·  19금 성인 전용  ·  프리미엄 에스코트  ·  <a href="tel:01062790862
+</body>
+</html>
