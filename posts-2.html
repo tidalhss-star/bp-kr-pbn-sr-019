@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>글 목록 (2/2) · kr-pbn-sr-019</title>
+  <meta name="description" content="kr-pbn-sr-019에 올라온 글 목록입니다.">
+  <link rel="canonical" href="https://cheongdam-shirt-review.hardcoreroom.com/posts-2.html">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <style>
+ /* === CSS Reset & Base === */
+ *, *::before, *::after {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ }
+ html {
+ font-size: 16px;
+ scroll-behavior: smooth;
+ }
+ body {
+ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+ background-color: #faf9f7;
+ color: #1a1a1a;
+ line-height: 1.7;
+ -webkit-font-smoothing: antialiased;
+ }
+ /* === Typography === */
+ h1, h2, h3, h4, h5, h6 {
+ font-weight: 700;
+ letter-spacing: -0.02em;
+ line-height: 1.2;
+ }
+ h1 {
+ font-size: 3.5rem;
+ margin-bottom: 1.5rem;
+ }
+ h2 {
+ font-size: 2.25rem;
+ margin-bottom: 1rem;
+ }
+ h3 {
+ font-size: 1.5rem;
+ margin-bottom: 0.75rem;
+ }
+ p {
+ font-size: 1.125rem;
+ margin-bottom: 1.25rem;
+ color: #404040;
+ }
+ a {
+ color: #1a1a1a;
+ text-decoration: none;
+ border-bottom: 1px solid transparent;
+ transition: border-color 0.2s ease;
+ }
+ a:hover {
+ border-bottom-color: #1a1a1a;
+ }
+ /* === Layout === */
+ .container {
+ max-width: 1200px;
+ margin: 0 auto;
+ padding: 0 2rem;
+ }
+ /* === Header & Navigation === */
+ header {
+ padding: 1.5rem 0;
+ border-bottom: 1px solid #e5e3df;
+ background-color: #faf9f7;
+ position: sticky;
+ top: 0;
+ z-index: 100;
+ }
+ .nav {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ }
+ .nav-logo {
+ font-size: 1.25rem;
+ font-weight: 700;
+ letter-spacing: -0.02em;
+ }
+ .nav-links {
+ display: flex;
+ gap: 2rem;
+ list-style: none;
+ }
+ .nav-links a {
+ font-size: 0.9375rem;
+ font-weight: 500;
+ text-transform: uppercase;
+ letter-spacing: 0.05em;
+ border-bottom: none;
+ }
+ .nav-links a:hover {
+ opacity: 0.7;
+ }
+ .hamburger-menu {
+ display: none;
+ flex-direction: column;
+ gap: 5px;
+ cursor: pointer;
+ background: none;
+ border: none;
+ padding: 0.5rem;
+ }
+ .hamburger-menu span {
+ width: 24px;
+ height: 2px;
+ background-color: #1a1a1a;
+ display: block;
+ }
+ .tel-link {
+ font-weight: 600;
+ font-size: 1.125rem;
+ color: #1a1a1a;
+ border-bottom: none;
+ white-space: nowrap;
+ }
+ .tel-link:hover {
+ opacity: 0.7;
+ }
+ @media (max-width: 768px) {
+ .hamburger-menu {
+ display: flex;
+ }
+ .nav-links {
+ display: none;
+ position: absolute;
+ top: 100%;
+ left: 0;
+ right: 0;
+ background-color: #faf9f7;
+ flex-direction: column;
+ padding: 1.5rem 2rem;
+ border-bottom: 1px solid #e5e3df;
+ }
+ .nav-links.active {
+ display: flex;
+ }
+ h1 {
+ font-size: 2.25rem;
+ }
+ h2 {
+ font-size: 1.75rem;
+ }
+ .container {
+ padding: 0 1.25rem;
+ }
+ }
+ /* === Hero Section === */
+ .hero {
+ padding: 5rem 0 3rem;
+ border-bottom: 1px solid #e5e3df;
+ }
+ .hero p {
+ font-size: 1.25rem;
+ max-width: 720px;
+ }
+ /* === Content Grid === */
+ .content-grid {
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ gap: 4rem;
+ padding: 4rem 0;
+ }
+ @media (max-width: 768px) {
+ .content-grid {
+ grid-template-columns: 1fr;
+ gap: 2.5rem;
+ }
+ }
+ /* === Card === */
+ .card {
+ border-top: 1px solid #e5e3df;
+ padding-top: 2rem;
+ }
+ .card h3 {
+ font-size: 1.375rem;
+ }
+ .card p {
+ font-size: 1rem;
+ color: #555;
+ }
+ .card .highlight {
+ font-weight: 600;
+ color: #1a1a1a;
+ }
+ /* === Info Block === */
+ .info-block {
+ padding: 3rem 0;
+ border-bottom: 1px solid #e5e3df;
+ }
+ .info-block:last-of-type {
+ border-bottom: none;
+ }
+ .info-block h2 {
+ margin-bottom: 1.5rem;
+ }
+ .info-block ul {
+ list-style: none;
+ padding: 0;
+ }
+ .info-block li {
+ padding: 0.75rem 0;
+ font-size: 1.125rem;
+ border-bottom: 1px solid #f0eeeb;
+ display: flex;
+ justify-content: space-between;
+ }
+ .info-block li:last-child {
+ border-bottom: none;
+ }
+ .info-block .label {
+ font-weight: 500;
+ color: #888;
+ }
+ .info-block .value {
+ font-weight: 600;
+ text-align: right;
+ }
+ /* === FAQ === */
+ .faq {
+ padding: 4rem 0;
+ }
+ .faq-item {
+ border-bottom: 1px solid #e5e3df;
+ padding: 1.5rem 0;
+ }
+ .faq-item:first-child {
+ border-top: 1px solid #e5e3df;
+ }
+ .faq-question {
+ font-size: 1.25rem;
+ font-weight: 600;
+ cursor: default;
+ }
+ .faq-answer {
+ font-size: 1rem;
+ color: #555;
+ margin-top: 0.75rem;
+ line-height: 1.6;
+ }
+ /* === CTA === */
+ .cta {
+ padding: 4rem 0;
+ text-align: center;
+ border-top: 1px solid #e5e3df;
+ }
+ .cta a {
+ display: inline-block;
+ font-size: 1.5rem;
+ font-weight: 700;
+ border: 2px solid #1a1a1a;
+ padding: 1rem 3rem;
+ transition: all 0.2s ease;
+ }
+ .cta a:hover {
+ background-color: #1a1a1a;
+ color: #faf9f7;
+ }
+ /* === Footer === */
+ footer {
+ padding: 2rem 0;
+ border-top: 1px solid #e5e3df;
+ font-size: 0.875rem;
+ color: #888;
+ text-align: center;
+ }
+ </style>
+  <meta property="og:title" content="글 목록 (2/2) · kr-pbn-sr-019">
+  <meta property="og:description" content="kr-pbn-sr-019에 올라온 글 목록입니다.">
+  <meta property="og:url" content="https://cheongdam-shirt-review.hardcoreroom.com/posts-2.html">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+</head>
+<body>
+  <div class="container">
+    <header>
+ <div class="container nav">
+ <div class="nav-logo">청담 셔츠룸</div>
+ <button class="hamburger-menu" onclick="document.querySelector('.nav-links').classList.toggle('active')">
+ 
+ 
+ 
+ </button>
+ <ul class="nav-links">
+ <li><a href="/">홈</a></li>
+ <li><a href="/info">정보</a></li>
+ <li><a href="/review">리뷰</a></li>
+ <li><a href="/contact">문의</a></li>
+ </ul>
+ 
+ </div>
+ </header>
+    <main>
+      <h1>글 목록</h1>
+      <p>전체 38개 · 2/2 페이지</p>
+      <ul class="post-list">
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0320.html">청담 셔츠룸 정보 활용한 공덕 셔츠룸 추천정보 확인법</a>
+        <p class="post-item__summary">청담 셔츠룸 정보를 통해 체계적인 서비스를 경험해 본 이들이라면 공덕 지역을 선택할 때도 높은 기준을 적용합니다. 셔츠룸이라는 공간은 쾌적한 환경과 서비스의 질이 무엇보다 중요하게 작용하는 장소입니</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0321.html">청담 셔츠룸 정보 확인 후 알아보는 연남 유흥 추천정보 가이드</a>
+        <p class="post-item__summary">오랜만에 만난 친구들과 연남동 골목을 거닐다가 분위기 좋은 곳을 찾으려 해도 막상 선택이 어려울 때가 많습니다. 단순히 화려한 간판만 보고 들어갔다가 낭패를 보는 경우가 비일비재하며, 특히 초행자들</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0322.html">청담 셔츠룸 정보 참고하며 살펴보는 마곡 가라오케 추천정보</a>
+        <p class="post-item__summary">많은 분이 특정 지역의 유흥 업소에 대해 막연히 부정적인 시각을 가지고 계십니다. 그러나 청담 셔츠룸 정보 등을 조사해보면 알 수 있듯, 서비스의 질과 정직한 시스템을 갖춘 곳들은 건전한 여가 공간</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0323.html">청담 셔츠룸 정보 비교 분석 및 마곡 유흥 추천정보 활용법</a>
+        <p class="post-item__summary">즐거운 모임을 위해 업소를 선택할 때 가장 먼저 고려해야 할 조건들이 있습니다. 청담 셔츠룸 정보 등을 통해 검증된 장소인지 확인하고, 접근성과 시설의 청결도까지 따져보는 과정이 필수적입니다. 단순</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0324.html">청담 셔츠룸 정보 활용한 합정 노래방 추천정보 및 업체 선정 가이드</a>
+        <p class="post-item__summary">청담 셔츠룸 정보 방식을 차용하여 지역 유흥 시설을 비교할 때 가장 중요한 것은 결국 신뢰할 수 있는 데이터입니다. 많은 사람이 합정을 방문하며 즐거운 시간을 보내고자 하지만, 막상 적절한 장소를 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0325.html">청담 셔츠룸 정보 검증으로 배우는 연남 클럽 추천정보 후기 확인 단계</a>
+        <p class="post-item__summary">청담 셔츠룸 정보처럼 구체적인 정보를 탐색하는 과정은 클럽 선택 시에도 동일하게 적용됩니다. 많은 홍보성 게시글 속에서 진실된 연남 클럽 추천정보 내용을 가려내는 것은 방문 전 필수적인 절차입니다.</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0326.html">청담 셔츠룸 정보 데이터로 본 합정 셔츠룸 추천정보 가격 비교 기준</a>
+        <p class="post-item__summary">청담 셔츠룸 정보 방식을 벤치마킹하여 합정 지역의 유흥 시설을 바라볼 때, 우리는 종종 가격이라는 변수 앞에 고민하게 됩니다. 선택지는 크게 서비스의 양을 강조하는 곳과 가격의 거품을 뺀 실속형으로</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0327.html">청담 셔츠룸 정보 활용한 공덕 가라오케 추천정보 분석</a>
+        <p class="post-item__summary">많은 분이 청담 셔츠룸 정보 등을 참고하며 새로운 유흥 공간을 찾지만, 시작부터 실패하는 경우가 적지 않습니다. 가장 흔한 실수는 업장의 규모나 시설만을 보고 성급하게 예약을 진행하는 것입니다. 분</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0328.html">청담 셔츠룸 정보 비교로 보는 상수 마사지 추천정보 체크리스트</a>
+        <p class="post-item__summary">청담 셔츠룸 정보와 같은 서비스 정보를 검색하다 보면 자연스럽게 지역 내 다른 여가 공간에도 관심을 두게 됩니다. 특히 피로를 풀기 위한 마사지 샵을 찾을 때는 몇 가지 명확한 기준을 가지고 접근해</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0329.html">청담 셔츠룸 정보 살피듯 분석하는 망원 노래방 추천정보 가이드</a>
+        <p class="post-item__summary">친구들과 망원동에서 시간을 보내다가 즉흥적으로 노래방을 찾았는데, 막상 들어가 보니 기대와 달라 당황했던 경험이 있으신가요? 청담 셔츠룸 정보 등을 찾아볼 때처럼 꼼꼼하게 따져보지 않으면 의도치 않</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0330.html">청담 셔츠룸 정보 활용한 홍대 노래방 추천정보 분석</a>
+        <p class="post-item__summary">일부 방문객들은 청담 셔츠룸 정보가 홍대 지역의 유흥 문화와 완전히 동일한 서비스 체계를 갖추고 있다고 오해하곤 합니다. 하지만 각 상권은 고유한 특성과 운영 방침을 지니고 있어 무분별하게 동일한 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/interview-002-d6tad3.html">청담 셔츠룸 정보 경험자에게 물어본 현실적인 판단 기준</a>
+        <p class="post-item__summary">청담 지역에서 셔츠룸을 방문하고자 할 때는 매장의 전반적인 분위기와 서비스 스타일을 사전에 파악하는 것이 중요합니다. 고급스러운 인테리어와 안정적인 분위기를 갖춘 곳이 많아 접대나 모임 장소로 선택</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/juice-1.html">청담 셔츠룸 정보 안내</a>
+        <p class="post-item__summary">셔츠룸은 청담 지역에서 독특한 문화적 공간을 형성하고 있으며, 고객들은 다양한 스타일의 옷차림과 분위기를 즐기기 위해 방문합니다. 이러한 업종은 지역 상권에서 특별한 인기를 얻으며, 미적인 감각과 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/juice-2.html">청담 셔츠룸 정보</a>
+        <p class="post-item__summary">청담 지역의 셔츠룸은 특별한 분위기 속에서 편안함을 추구하는 분들이 자주 찾는 공간입니다. 이러한 업종은 다양한 서비스와 환경을 제공하며, 고객에게 독특한 경험을 선사합니다. 정보 사이트에서는 이러</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/myth-001-d6tad3.html">청담 셔츠룸 정보에 관한 흔한 오해, 직접 확인해보니 달랐던 점</a>
+        <p class="post-item__summary">아, 진짜... 청담 셔츠룸의 폐업 사례와 살아남은 단체 가라오케 간의 공통점과 차별화 전략을 살펴보면, 무엇보다 중요한 건 바로 '단골 손님'입니다. 그들은 언제 어디서든 찾고 싶어하는 매력적인 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/normal-1.html">청담 셔츠룸 정보 안내</a>
+        <p class="post-item__summary">청담 지역의 셔츠룸 관련 정보는 전문적인 복장 관리와 의류 스타일링에 관심이 있는 분들에게 실질적인 도움이 될 수 있습니다. 이 정보는 특정 업소에 대한 구체적인 가격이나 영업 시간을 다루지 않으며</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/normal-2.html">청담 셔츠룸 정보</a>
+        <p class="post-item__summary">청담 지역의 셔츠룸은 고객에게 편안한 서비스 환경을 위해 전문적인 매너와 깔끔한 공간을 중시합니다. 셔츠룸은 일반적인 휴게 공간과 달리 맞춤형 운영을 지향하며, 방문 전 사전 정보를 충분히 확인하면</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/normal-3.html">청담 셔츠룸 정보</a>
+        <p class="post-item__summary">셔츠룸은 청담 지역을 중심으로 업무를 마친 후 방문하거나, 특별한 날에 격식을 갖춘 자리를 준비할 때 참고되는 공간입니다. 셔츠룸을 찾은 경험이 없는 분이라면, 먼저 해당 업종이 어떤 형태로 운영되</p>
+      </li>
+      </ul>
+    <nav class="pager">
+      <a class="pager__link" href="posts.html">1</a>
+      <span class="pager__current">2</span>
+    </nav>
+    </main>
+  </div>
+</body>
+</html>
